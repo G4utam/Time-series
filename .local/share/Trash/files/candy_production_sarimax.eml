@@ -1,0 +1,129 @@
+Delivered-To: ajiltu10@gmail.com
+Received: by 2002:a5e:a904:0:0:0:0:0 with SMTP id c4csp445347iod;
+        Sat, 23 Nov 2019 00:33:44 -0800 (PST)
+X-Received: by 2002:ac8:502:: with SMTP id u2mr7694587qtg.122.1574498024855;
+        Sat, 23 Nov 2019 00:33:44 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1574498024; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WxZnHjo0SO/9w0uV5yuGJunVBufDXkMe7D9yW5QCE8lB2bnH5PoRKpQDp3aF7uVAWA
+         TGjmGJkrlCtArPH20BMu+DgT8SxdBQRD6z4+n9sGTKA7Q4z+IZnCYpmWD2llm4rDhYi5
+         JZwgg6Al5FzZUdxXN7ztA3ajX5fJAFUVkcE4s/QO/b0PVdM+ifbq34qVt1WtApTQBqOr
+         Y16GvoABCO56lxeceLfDYwEC5Cvvu8zykSUSiSSkFJAmUzCmIjora5HyKFrjC9QhHwAm
+         lcFXQ95a50kPsusyuN5XxSPhI+JhCbrBObmOojb1g+ubokePvl5Zaz9aZFlaZcu47+b5
+         /8rQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:mailmergekey:from:mime-version
+         :dkim-signature;
+        bh=jqX4tXybEOQlDSkEIi1MjveuT0i9/Rh/tSiCsZfGUJ4=;
+        b=O9MvDsszm87olP3ITBJ0YUJZblzbQYlWklc41fdxUZsDLwoLHW0rK2R7ambceVjjn2
+         PuvB/g9ahO4AyOcGfFoblK4lCU6gvCN3YmDh8TLlvJeD3uVIV65fl7DkvQMujOiplEuh
+         jvAg57rK9QgmjKdvmjDQ3Os85DXnhoipxBlwTw/8h6hz2XMvZh3v74xKk4gU8mmf3Qhi
+         v3Rh4Xu/5gR7Ft+dMr4D+Tp+SBjpOFoEnKcCOw4VYMsDEg8ShlSESvnO/aprkiUgcs5K
+         0TmiOc+l0NDb3itHbqSyf6r5W4isX8A2ANjFSuaRy/DHNyU4rWbZmRemcKV3yRFP/DJE
+         5OnA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SZG5Q3fD;
+       spf=pass (google.com: domain of ashfaquewrites@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=ashfaquewrites@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <ashfaquewrites@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id m56sor803467qtf.66.2019.11.23.00.33.44
+        for <ajiltu10@gmail.com>
+        (Google Transport Security);
+        Sat, 23 Nov 2019 00:33:44 -0800 (PST)
+Received-SPF: pass (google.com: domain of ashfaquewrites@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=SZG5Q3fD;
+       spf=pass (google.com: domain of ashfaquewrites@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=ashfaquewrites@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:mailmergekey:date:message-id:subject:to;
+        bh=jqX4tXybEOQlDSkEIi1MjveuT0i9/Rh/tSiCsZfGUJ4=;
+        b=SZG5Q3fD1+hawZBSV6GTdif6Y4S9OHUNOW+meKd9SYNwbrF7BBfGJzZKpYM74XZHXG
+         rG4/+ZdzWHjxBJln7JorteFsUpZkoxda94vAr/6YrBV9sgkD6xhXRIQOVL5sUbH4CdNG
+         5pM0NX132fcdWRPXsvm+o2G4IXZrdYv+qHkTIWlV8kkaTF27k0FO4eNkQw40lbzmfVDV
+         nhyojhxXzEpx4tnPHPix4h2IEiie/+MZdOWHxKI+0es4inQQjiFetUV9ivW30oamGJp7
+         yds06NBbYS1w/kqS+Vso3I/FL+X/CVV2SHVYQG674Is2gWIRE823i0tgOWYe4Onvmr+S
+         TegA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:mailmergekey:date:message-id
+         :subject:to;
+        bh=jqX4tXybEOQlDSkEIi1MjveuT0i9/Rh/tSiCsZfGUJ4=;
+        b=siI9g8Do0sMxmRkgu2uOv2LGz2SYt9Ov3lugyqclUB0TUuH4++UFreyZsXL9Itir2t
+         Mj5xoqQKSg38AqvqdOuDRJAUXVCTvK4mY4Yu8b7bfKTrSuKnTIp2W4kZ0qLf3k1jMKlg
+         ZDzosaO8sMWzc5RhYwxFvRm15FgQEuGtZNNUr/86rM0HReH2ovFol9fZo+PlFs+FS5MC
+         W+6JtYR3PL4ymo709A4en3JJzkbCo7W7wL1hNrPNz/0lTRnFvE+wzoI2Ikoa/TgVwfbX
+         E6W+lAvDxdepQCLD1iEKiAyhTjHkROEV+Cj6+uSainJttjYMdG+Y2Mv1Q9qoP4YKo4XO
+         xE0w==
+X-Gm-Message-State: APjAAAWkdB7tXz0hcqYADBJK7UoKZOED8X+gpHwPjmr4tiDlCedCT3NX
+	/sFpeCeANesLWkvxMPJ1VjumoHMNMGUfsBYnzuVBHw==
+X-Google-Smtp-Source: APXvYqykhxsiaDceCOHcF990eYhzLaZt+L2oduYmHHf7aXu2Q4jUwsexu37qczzO9EeAjzFVk3GJjfDiPaFN5pwfwfw=
+X-Received: by 2002:ac8:45c2:: with SMTP id e2mr19049160qto.366.1574498024317;
+ Sat, 23 Nov 2019 00:33:44 -0800 (PST)
+Received: from 326440123436 named unknown by gmailapi.google.com with
+ HTTPREST; Sat, 23 Nov 2019 02:33:44 -0600
+MIME-Version: 1.0
+From: Ashfaque Ahammed <ashfaquewrites@gmail.com>
+mailmergekey: agxzfm1haWxmb29nYWVyUQsSDE9yZ2FuaXphdGlvbiIYYXNoZmFxdWV3cml0ZXNAZ21haWwuY29tDAsSBFVzZXIYgID83_rRnAgMCxIJTWFpbE1lcmdlGICAktfGtZQIDA
+Date: Sat, 23 Nov 2019 02:33:44 -0600
+Message-ID: <CAL0iQef8fnuTZF87hT19mOKGARjZYibVxTDrr-0_gAJC42KXWw@mail.gmail.com>
+Subject: Code Club follow up on introductory call
+To: ajiltu10@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000007068b70597ff6392"
+
+--0000000000007068b70597ff6392
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Ajil,
+
+Hope you are doing well. Thank you for showing interest to start a chapter
+of TinkerHub Code Club in your institution.
+
+As a follow up for our first team call, we believe that you have conducted
+a meeting with your team members to brief about our first call on
+14-11-2019. *Please reply in this thread on how it went.* We would love to
+know :)
+
+If not done already, we request you to do the same at the earliest.
+
+--=20
+Best,
+*Ashfaque Ahammed*
+Chief Operations Officer
+[image: TinkerHub Foundation]
+m:+919497203106
+mail <ashfaquewrites@gmail.com>  |  web <http://bit.ly/Aq_Co>  |  LinkedIn
+<http://www.linkedin.com/in/aqco>
+=E1=90=A7
+
+--0000000000007068b70597ff6392
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello Ajil,<br><br>Hope you are doing well. Thank you for =
+showing interest to start a chapter of TinkerHub Code Club in your institut=
+ion.<br><div><br></div><div>As a follow up for our first team call, we beli=
+eve that you have conducted a meeting with your team members to brief about=
+ our first call on 14-11-2019. <b>Please reply in this thread on how it wen=
+t.</b> We would love to know :)=C2=A0<br><br>If not done already, we reques=
+t you to do the same at the earliest.</div><div><br></div><div>-- <br><div =
+dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><d=
+iv dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr">Best,<br><b>Ashf=
+aque Ahammed</b><div>Chief Operations Officer</div><div><img src=3D"http://=
+th.gooseberoid.com/wp-content/uploads/2019/05/TinkerLogo-1.png" style=3D"wi=
+dth:154px" alt=3D"TinkerHub Foundation"><br></div><div>m:+919497203106</div=
+><div><a href=3D"mailto:ashfaquewrites@gmail.com" target=3D"_blank">mail</a=
+>=C2=A0 |=C2=A0 <a href=3D"http://bit.ly/Aq_Co" target=3D"_blank">web</a>=
+=C2=A0 |=C2=A0 <a href=3D"http://www.linkedin.com/in/aqco" target=3D"_blank=
+"><font color=3D"#0000ff">LinkedIn</font></a></div></div></div></div></div>=
+</div></div></div></div>
+<div hspace=3D"streak-pt-mark" style=3D"max-height:1px"><img alt=3D"" style=
+=3D"width:0px;max-height:0px;overflow:hidden" src=3D"https://mailfoogae.app=
+spot.com/t?sender=3DaYXNoZmFxdWV3cml0ZXNAZ21haWwuY29t&amp;type=3Dzeroconten=
+t&amp;guid=3D5545d04d-238f-4544-af6a-131a634af989"><font color=3D"#ffffff" =
+size=3D"1">=E1=90=A7</font></div>
+
+--0000000000007068b70597ff6392--
